@@ -1,7 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter, Routes, Route, Link } from 'react-router-dom';
-import { Button } from './components/Button.jsx';
 import YouTubeChannelChecklist from './ytPage.jsx';
 
 const Home = () => (
@@ -10,13 +9,10 @@ const Home = () => (
     <Link to="/about" className="text-sky-400 underline mt-4 inline-block">
       Ir para About
     </Link>
-    <Button label="NK-Botão Funcionando!" />
   </div>
 );
 
-const About = () => (
-  <YouTubeChannelChecklist />
-);
+const About = () => <YouTubeChannelChecklist />;
 
 function App() {
   return (
